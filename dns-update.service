@@ -1,0 +1,7 @@
+[Unit]
+Description=Update DNS to point to current external IP
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /path/to/dns-update/dns-update.py
+WorkingDirectory=/path/to/dns-update
